@@ -1,6 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Error from './Components/ErrorPage/Error';
 import Home from './Components/Home/Home';
+import Statistics from './Components/Statistics/Statistics';
+import Topics from './Components/Topics/Topics';
 import Main from './Layouts/Main';
 function App() {
   const router = createBrowserRouter([
@@ -12,7 +15,19 @@ function App() {
           path:'/',
           element:<Home></Home>
         },
+        {
+          path:'/topic',
+          element:<Topics></Topics>
+        },
+        {
+          path:'/statistics',
+          element:<Statistics></Statistics>
+        }
       ]
+    },
+    {
+      path:'*',
+      element:<Error></Error>
     }
   ]);
   return (
