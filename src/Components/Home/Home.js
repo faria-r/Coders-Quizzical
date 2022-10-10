@@ -6,7 +6,6 @@ import SubHeader from '../Sub-Header/SubHeader';
 const Home = () => {
     const quizTopics = useLoaderData();
     const allQuizes = quizTopics.data;
-    console.log(allQuizes);
     return (
         <div>
             <SubHeader></SubHeader>

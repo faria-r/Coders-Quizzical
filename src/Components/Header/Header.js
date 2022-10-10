@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return (
         <div className=' bg-orange-400 p-8 flex justify-around align-middle'>
-            <div>
+            <div data-aos="fade-down"
+            data-aos-duration="3000">
                 <h2 className='text-orange-900 text-3xl font-bold'>Coders Quizzical</h2>
             </div>
             <nav>
