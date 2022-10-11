@@ -21,7 +21,7 @@ const QuizDetails = ({quiz}) => {
             <div className='mt-8 w-5/6 mx-auto'>
                        {/* question for quiz  */}
 
-            <h2 className='text-indigo-700 font-bold text-xl mb-8 text-center'>{question}</h2>
+            <h2 className='text-indigo-700 font-bold text-xl mb-8 text-center'>Question:{question}</h2>
             <div>
             <button onClick={() => notify(correctAnswer)} className='button p-2'>
             <FontAwesomeIcon className='text-indigo-500 -mr-96 ' icon={faEye}></FontAwesomeIcon>

@@ -9,7 +9,7 @@ const Options = ({option,quiz}) => {
     const notify = () => toast("Wow so easy!");
     return (
         <div className='border rounded-xl p-8'>
-            <input type="radio" name="ans" value={correctAnswer} />
+            <input type="radio" name="ans"/>{option}
             <label  className='ml-2 text-orange-500'>{option}</label>
           
         </div>
