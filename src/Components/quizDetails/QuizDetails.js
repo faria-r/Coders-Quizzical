@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const QuizDetails = ({ quiz }) => {
   const { question, options, correctAnswer } = quiz;
+  console.log(quiz);
 
   // toast for showing correct answer
   const notify = (ans) => {
