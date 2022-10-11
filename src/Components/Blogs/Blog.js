@@ -3,81 +3,42 @@ import { Accordion } from 'flowbite-react';
 const Blog = () => {
     return (
         <div className='w-1/2 mx-auto mt-8 p-4'>
-                <h2 className='text-3xl font-bold text-orange-500'>FAQ Questions On React!</h2>
+                <h2 className='text-3xl font-bold text-orange-500 mb-8'>FAQ Questions On React!</h2>
             <Accordion alwaysOpen={true}>
   <Accordion.Panel>
     <Accordion.Title>
-      What is Flowbite?
+    What is the purpose of react router?
     </Accordion.Title>
     <Accordion.Content>
       <p className="mb-2 text-gray-500 dark:text-gray-400">
-        Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.
+      React Router is a standard library for routing in React. Its purpose is : It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
+      ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
       </p>
-      <p className="text-gray-500 dark:text-gray-400">
-        Check out this guide to learn how to{' '}
-        <a
-          href="https://flowbite.com/docs/getting-started/introduction/"
-          className="text-blue-600 hover:underline dark:text-blue-500"
-        >
-          get started
-        </a>
-        {' '}and start developing websites even faster with components on top of Tailwind CSS.
-      </p>
+      
     </Accordion.Content>
   </Accordion.Panel>
   <Accordion.Panel>
     <Accordion.Title>
-      Is there a Figma file available?
+    2.	How does context API works?
     </Accordion.Title>
     <Accordion.Content>
       <p className="mb-2 text-gray-500 dark:text-gray-400">
-        Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.
+      Context API provides a way to pass data through the component tree from parent to child components, without having to pass props down manually at each level. SO we dont have to use prop drilling in our app if we use Context API.To use Context API we need to use <span className='text-orange-500'>CreateContext()</span> and to use that context We Just need to <span className='text-orange-500' >UseContext()</span>.
       </p>
-      <p className="text-gray-500 dark:text-gray-400">
-        Check out the{' '}
-        <a
-          href="https://flowbite.com/figma/"
-          className="text-blue-600 hover:underline dark:text-blue-500"
-        >
-          Figma design system
-        </a>
-        {' '}based on the utility classes from Tailwind CSS and components from Flowbite.
-      </p>
+      
     </Accordion.Content>
   </Accordion.Panel>
   <Accordion.Panel>
     <Accordion.Title>
-      What are the differences between Flowbite and Tailwind UI?
+      What is React useRef HOOK?
     </Accordion.Title>
     <Accordion.Content>
       <p className="mb-2 text-gray-500 dark:text-gray-400">
-        The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+      React's useRef hook, short for reference, allows us to persist data across renders without causing the component to rerender. A typical use case for this hook would be to store a DOM element, which we can use to access it programmatically. we can also use it to keep a reference to the previous state of a component.
+      The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. 
+      the useRef hook returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
       </p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">
-        However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.
-      </p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">
-        Learn more about these technologies:
-      </p>
-      <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
-        <li>
-          <a
-            href="https://flowbite.com/pro/"
-            className="text-blue-600 hover:underline dark:text-blue-500"
-          >
-            Flowbite Pro
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://tailwindui.com/"
-            rel="nofollow"
-            className="text-blue-600 hover:underline dark:text-blue-500"
-          >
-            Tailwind UI
-          </a>
-        </li>
-      </ul>
+      
     </Accordion.Content>
   </Accordion.Panel>
 </Accordion>
