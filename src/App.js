@@ -23,6 +23,10 @@ function App() {
           element:<Topics></Topics>
         },
         {
+          path:'/topic/3',
+          element:<Error></Error>
+        },
+        {
           path:'/topic/:topicId',
           loader: async({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`),
           element:<Quizes></Quizes>
@@ -41,7 +45,8 @@ function App() {
     {
       path:'*',
       element:<Error></Error>
-    }
+    },
+   
   ]);
   return (
     <div className="App">
