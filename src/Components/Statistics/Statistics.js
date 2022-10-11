@@ -15,8 +15,8 @@ const Statistics = () => {
         return chartData;
     })
     return (
-        <div className='w-1/2 mx-auto my-16 '>
-            <BarChart  width={500} height={400} data={allData}>
+        <div className='sm:w-3/4  sm:mx-auto lg:w-1/2 lg:mx-auto my-16 '>
+            <BarChart  width={450} height={400} data={allData}>
         <Bar dataKey="total" fill="#8884d8" />
         <XAxis dataKey="name" />
           <YAxis />

@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div>
             <SubHeader></SubHeader>
-            <div className='grid grid-cols-2 mt-8 mx-auto bg-orange-400 rounded-lg p-16'>
+            <div className='grid lg:grid-cols-2 sm:grid-cols-1 mt-8 mx-auto bg-orange-400 rounded-lg lg:p-16'>
                 {
                     allQuizes.map(quiz => 
                     <Quiz

@@ -30,7 +30,7 @@ const QuizDetails = ({quiz}) => {
             <ToastContainer/>
                         {/* options for quizes  */}
 
-           <div className='grid grid-cols-2 border rounded-xl w-1/2 gap-8 p-6 mx-auto shadow-2xl'>
+           <div className='grid lg:grid-cols-2 border rounded-xl lg:w-1/2 gap-8 p-6 mx-auto shadow-2xl'>
           {
                options.map(option => <Options
                option={option}
