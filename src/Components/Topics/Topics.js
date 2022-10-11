@@ -1,13 +1,7 @@
-import React from 'react';
-import Quiz from '../Quiz/Quiz';
+import React from "react";
 
 const Topics = () => {
-  
-    return (
-        <div>
-            
-        </div>
-    );
+  return <div></div>;
 };
 
 export default Topics;
