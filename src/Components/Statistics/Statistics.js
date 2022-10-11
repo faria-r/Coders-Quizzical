@@ -1,21 +1,27 @@
-// import React from 'react';
-// // import React, { PureComponent } from 'react';
-// import { useLoaderData } from 'react-router-dom';
-// // import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import { PureComponent } from 'react';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-// // const Statistics = () => {
-// //     const data = useLoaderData();
-// //     const chartData = data.data;
-// //     console.log(chartData);
-// //     const chartData.map(singledata=> {
-// //         return singledata;
-// //     });
-//     // console.log(data);
-//     return (
-//         <div>
-//             <h3>Statistics</h3>
-//         </div>
-//     );
-// };
 
-// export default Statistics;
+const Statistics = () => {
+    const data = useLoaderData();
+    const allData = data.data;
+    const singleData = allData.map(data => {
+        const chartData = {
+            name:data.name,
+            total:data.total
+        };
+        return chartData;
+    })
+    return (
+        <BarChart className='mx-auto my-16' width={500} height={400} data={allData}>
+        <Bar dataKey="total" fill="#8884d8" />
+        <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip></Tooltip>
+      </BarChart>
+    );
+};
+
+export default Statistics;
