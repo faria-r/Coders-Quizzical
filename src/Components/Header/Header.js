@@ -20,7 +20,7 @@ const New = () => {
     >
       Home
     </Navbar.Link>
-    <Navbar.Link href="/topic">
+    <Navbar.Link href="/">
       Topic
     </Navbar.Link>
     <Navbar.Link href="/statistics">
