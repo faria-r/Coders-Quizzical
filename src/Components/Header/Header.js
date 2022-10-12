@@ -14,7 +14,7 @@ const Header = () => {
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Link  to={"/"}>Home</Link>
-          <Link  to={"/"}>Topic</Link>
+          <Link  to={"/topic"}>Topic</Link>
           <Link  to={"/statistics"}>Statistics</Link>
           <Link  to={"/blog"}>Blog</Link>
         </Navbar.Collapse>

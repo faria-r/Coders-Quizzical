@@ -20,12 +20,10 @@ function App() {
           element: <Home></Home>,
         },
         {
-          path: "/",
+          path: "/topic",
+          loader: async () =>
+            fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Topics></Topics>,
-        },
-        {
-          path: "/topic/3",
-          element: <Error></Error>,
         },
         {
           path: "/topic/:topicId",
@@ -49,6 +47,10 @@ function App() {
     },
     {
       path: "*",
+      element: <Error></Error>,
+    },
+    {
+      path: '/topic/*',
       element: <Error></Error>,
     },
   ]);
